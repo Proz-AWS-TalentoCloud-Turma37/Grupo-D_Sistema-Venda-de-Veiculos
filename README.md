@@ -1,10 +1,10 @@
 # Sistema de Catálogo de Filmes
 ## Sistema desenvolvido por:
 
-### 
+### subtitulo
 
-> descrição
-> 
+> descrição colocar texto
+
  [GitHub Pages](https://pages.github.com/)
  
  ![Descrição Imagem](https://myoctocat.com/assets/images/base-octocat.svg)
