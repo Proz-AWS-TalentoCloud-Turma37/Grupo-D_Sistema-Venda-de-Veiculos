@@ -1,5 +1,5 @@
 # Sistema de Catálogo de Filmes
-## Siste desenvolvido por:
+## Sistema desenvolvido por:
 
 ### 
 
