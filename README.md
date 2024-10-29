@@ -1,19 +1,9 @@
 # Sistema de Catálogo de Carros 
-## Sistema desenvolvido por:
+## Sistema desenvolvido por: Jaime Matheus rayanderson e Eduardo
 
-### subtitulo
+### Carros 
 
-> descrição colocar texto
+> Link FIGMA https://www.figma.com/design/kl8SulAarp4OaIJ2zlhLi0/Carro?node-id=0-1&node-type=canvas&t=DDMMhh0nWLwTJ84C-0
 
- [GitHub Pages](https://pages.github.com/)
- 
- ![Descrição Imagem](https://myoctocat.com/assets/images/base-octocat.svg)
+![Carro](https://github.com/user-attachments/assets/aaf23b47-74d5-4aa6-88e9-09d48775be9d)
 
-<div align="center">
-    <img src="https://myoctocat.com/assets/images/base-octocat.svg" width="300" height="200">
-<div>
-
-````html
-  <div> conteúdo </div>
-
-````
