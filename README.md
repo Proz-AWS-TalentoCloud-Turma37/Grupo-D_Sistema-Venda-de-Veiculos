@@ -1,5 +1,5 @@
 # Sistema de Catálogo de Carros 
-## Sistema desenvolvido por: Jaime Matheus rayanderson e Eduardo
+## Sistema desenvolvido por: Jaime Matheus, Rayanderson e Eduardo
 
 ### Carros 
 
