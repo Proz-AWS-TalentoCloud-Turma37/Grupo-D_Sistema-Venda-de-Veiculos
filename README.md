@@ -1,5 +1,5 @@
 # Sistema de Catálogo de Carros 
-## Sistema desenvolvido por: Jaime Matheus, Rayanderson e Eduardo
+## Sistema desenvolvido por: Jaime, Matheus, Rayanderson e Eduardo
 ### Requisitos Funcionais
 
 ### Requesitos Não Funcionais
