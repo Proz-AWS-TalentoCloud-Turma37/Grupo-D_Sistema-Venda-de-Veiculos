@@ -47,6 +47,44 @@ Total ou em parcelas.
 
 ### Requesitos Não Funcionais
 
+1. Desempenho
+O sistema deve ser capaz de processar até 1000 consultas de usuários simultaneamente.
+O tempo de resposta para a pesquisa de veículos não deve exceder 2 segundos.
+
+2. Disponibilidade
+O sistema deve estar disponível 99,9% do tempo, com manutenção programada fora do horário comercial.
+
+3. Segurança
+Todos os dados de usuários devem ser criptografados.
+O sistema deve ter autenticação multifatorial para acesso de administradores.
+
+4. Usabilidade
+A interface deve ser intuitiva, permitindo que um usuário sem experiência consiga completar uma compra em no máximo 5 minutos.
+O sistema deve ser compatível com dispositivos móveis, garantindo uma experiência de uso adequada.
+
+5. Manutenibilidade
+O código deve ser modular, permitindo atualizações em componentes específicos sem impactar todo o sistema.
+Documentação técnica deve ser fornecida para facilitar a manutenção futura.
+
+6. Escalabilidade
+O sistema deve ser capaz de suportar um aumento de 50% no número de usuários ativos sem degradação no desempenho.
+
+7. Compatibilidade
+O sistema deve ser compatível com os navegadores mais utilizados (Chrome, Firefox, Safari, Edge).
+Deve ser possível integrar o sistema com plataformas de pagamento e serviços de logística.
+
+8. Confiabilidade
+O sistema deve ter um tempo médio de recuperação (MTTR) de menos de 30 minutos após uma falha.
+
+9. Portabilidade
+O sistema deve ser capaz de ser implantado em diferentes ambientes de nuvem com mínima reconfiguração.
+
+10. Localização
+O sistema deve oferecer suporte a múltiplos idiomas, permitindo a personalização da interface de acordo com a localização do usuário.
+
+Esses requisitos ajudam a garantir que a loja de vendas de carros não apenas funcione corretamente, mas também proporcione uma boa experiência aos usuários e mantenha sua eficiência ao longo do tempo.
+
+
 ### Telas do sistema
 
 > Link FIGMA https://www.figma.com/design/kl8SulAarp4OaIJ2zlhLi0/Carro?node-id=0-1&node-type=canvas&t=DDMMhh0nWLwTJ84C-0
