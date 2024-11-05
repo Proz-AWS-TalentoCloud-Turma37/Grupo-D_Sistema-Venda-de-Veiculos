@@ -1,6 +1,6 @@
 # Sistema de Catálogo de Venda de Veículos
 
-## Sistema desenvolvido por: Jaime, Matheus, Rayanderson e Eduardo
+## Sistema desenvolvido por: Jaime, Matheus, Rayanderson, Eduardo e Cesar
 
 ### Requisitos Funcionais
 
