@@ -1,4 +1,4 @@
-# Sistema de Catálogo de Carros 
+# Sistema de Catálogo de Venda de Veículos
 
 ## Sistema desenvolvido por: Jaime, Matheus, Rayanderson e Eduardo
 
