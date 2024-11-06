@@ -1,0 +1,145 @@
+/* Estilos globais */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f9fb;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    background-color: #e6f3f7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #cdd8dc;
+}
+
+.logo img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%;
+    position: relative; /* Para o posicionamento do botão "Voltar" */
+}
+
+/* Botão Voltar posicionado à esquerda do card */
+.back-button {
+    position: absolute;
+    top: 10px; /* Posiciona o botão no topo da página */
+    left: 15%; /* Alinha o botão à esquerda do card */
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Detalhes do carro */
+.car-details {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* O card ocupará toda a largura disponível */
+    max-width: 1200px;
+    margin-top: 10px; /* Adiciona um espaço abaixo do botão "Voltar" */
+}
+
+/* Estilo da imagem do carro */
+.car-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Informações do carro */
+.car-info {
+    text-align: left;
+    flex: 1;
+}
+
+.car-info h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px; /* Aumenta o espaço abaixo do título */
+}
+
+.year-km {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px; /* Aumenta o espaço abaixo do ano e quilometragem */
+}
+.year-kn{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 170px; 
+
+}
+
+.price {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px; /* Aumenta o espaço abaixo do preço */
+}
+
+.payment {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px; /* Aumenta o espaço abaixo das formas de pagamento */
+}
+/* Botão de Interesse */
+/* Botão de Interesse */
+.interest-button {
+    padding: 10px 40px; /* Reduz o tamanho do botão */
+    background-color: #4285f4;
+    color: #ffffff;
+    font-size: 22px; /* Ajuste o tamanho da fonte */
+    font-weight: bold;
+    border: 2px solid #1a3d7c; /* Mantenha a borda azul escuro */
+    border-radius: 19px; /* Diminui o arredondamento */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.interest-button:hover {
+    background-color: #306fcf;
+}
