@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoFácil - Pesquisa de Carros</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
@@ -18,48 +18,56 @@
         </div>
     </header>
 
-    <section class="car-list">
-        <div class="car-card">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIre5tV61KnQG1Z2zq-yZx2hq9alaA17UQvUzZ7ZzgcX-8UKHXyQe9G5anxSCWmOnilPPGlr04rxFK4RKlNzTAjGrXHs6T9TUue4MqoAyuXhNal-5b2oMgmGmjsNUZyXP5VeaDYjSk_EE/s1600/Volvo-XC40-2020+%25282%2529.jpg" alt="Carro 1">
-            <h2>Título</h2>
-            <p>Descrição breve sobre o carro. Informações principais...</p>
-        </div>
-        <div class="car-card">
-            <img src="https://www.comparaonline.com.br/blog-statics/br/uploads/2014/10/ferrari-2-.png" alt="Carro 2">
-            <h2>Título</h2>
-            <p>Descrição breve sobre o carro. Informações principais.</p>
-        </div>
-        <div class="car-card">
-            <img src="https://www.infomoney.com.br/wp-content/uploads/2019/06/land-rover-evoque-1.jpg?w=900&quality=70&strip=all" alt="Carro 3">
-            <h2>Título</h2>
-            <p>Descrição breve sobre o carro. Informações principais.</p>
-        </div>
-        <div class="car-card">
-            <img src="https://rarovidro.com.br/imagens/informacoes/vidros-carros-importados-03.jpg" alt="Carro 3">
-            <h2>Título</h2>
-            <p>Descrição breve sobre o carro. Informações principais.</p>
-        </div>
-        <div class="car-card">
-            <img src="https://rarovidro.com.br/imagens/informacoes/vidros-carros-importados-03.jpg" alt="Carro 1">
-            <h2>Título</h2>
-            <p>Descrição breve sobre o carro. Informações principais.</p>
-        </div>
-        <div class="car-card">
-            <img src="https://placar.com.br/wp-content/uploads/2021/09/alx_kia_sportage_iva_4836-sel_original.jpeg" alt="Carro 2">
-            <h2>Título</h2>
-            <p>Descrição breve sobre o carro. Informações principais.</p>
-        </div>
-        <div class="car-card">
-            <img src="https://revistacarro.com.br/wp-content/uploads/2018/03/ferrari-gtc4lusso-t-3-txt1.jpg" alt="Carro 3">
-            <h2>Título</h2>
-            <p>Descrição breve sobre o carro. Informações principais.</p>
-        </div>
-        <div class="car-card">
-            <img src="https://www.infomoney.com.br/wp-content/uploads/2019/06/land-rover-evoque-1.jpg?w=900&quality=70&strip=all" alt="Carro 3">
-            <h2>Título</h2>
-            <p>Descrição breve sobre o carro. Informações principais.</p>
-        </div>
-        <!-- Adicione mais cartões conforme necessário -->
+    <!-- Seção de lista de carros onde os cartões serão carregados dinamicamente -->
+    <section class="car-list" id="carro-container">
     </section>
+
+    <script>
+        function carregar() {
+            fetch('./json/carro.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Erro HTTP! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const container = document.querySelector("#carro-container");
+
+                    // Limpa o contêiner antes de adicionar os novos cartões
+                    container.innerHTML = '';
+
+                    // Acessa o array "carros" no JSON e cria cada cartão de carro
+                    data.carros.forEach(carro => {
+                        const card = document.createElement("div");
+                        card.classList.add("car-card");
+
+                        const img = document.createElement("img");
+                        img.src = carro.imagem;
+                        img.alt = carro.nome;
+
+                        const titulo = document.createElement("h2");
+                        titulo.textContent = carro.nome;
+
+                        const descricao = document.createElement("p");
+                        descricao.textContent = "Descrição breve sobre o carro. Informações principais...";
+
+                        // Adiciona o evento de clique para redirecionar
+                        card.addEventListener("click", () => {
+                            // Redireciona para a página de detalhes com parâmetros de URL
+                            window.location.href = `detalhes.html?nome=${encodeURIComponent(carro.nome)}&imagem=${encodeURIComponent(carro.imagem)}`;
+                        });
+
+                        card.appendChild(img);
+                        card.appendChild(titulo);
+                        card.appendChild(descricao);
+                        container.appendChild(card);
+                    });
+                })
+                .catch(error => console.error('Erro ao carregar os dados:', error));
+        }
+
+        carregar();
+    </script>
 </body>
 </html>
