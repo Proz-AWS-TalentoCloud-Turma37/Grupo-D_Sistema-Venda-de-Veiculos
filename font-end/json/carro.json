@@ -1,0 +1,41 @@
+{
+    "carros": [
+      {
+        "nome": "Volvo XC40",
+        "imagem": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIre5tV61KnQG1Z2zq-yZx2hq9alaA17UQvUzZ7ZzgcX-8UKHXyQe9G5anxSCWmOnilPPGlr04rxFK4RKlNzTAjGrXHs6T9TUue4MqoAyuXhNal-5b2oMgmGmjsNUZyXP5VeaDYjSk_EE/s1600/Volvo-XC40-2020+%25282%2529.jpg"
+      },
+      {
+        "nome": "Ferrari",
+        "imagem": "https://www.comparaonline.com.br/blog-statics/br/uploads/2014/10/ferrari-2-.png"
+      },
+      {
+        "nome": "Land Rover Range",
+        "imagem": "https://www.infomoney.com.br/wp-content/uploads/2019/06/land-rover-evoque-1.jpg?w=900&quality=70&strip=all"
+      },
+      {
+        "nome": "BMW Z4",
+        "imagem": "https://rarovidro.com.br/imagens/informacoes/vidros-carros-importados-03.jpg"
+      },
+      {
+        "nome": "BMW Z4",
+        "imagem": "https://rarovidro.com.br/imagens/informacoes/vidros-carros-importados-03.jpg"
+      },
+      {
+        "nome": "Kia Sporteg",
+        "imagem": "https://placar.com.br/wp-content/uploads/2021/09/alx_kia_sportage_iva_4836-sel_original.jpeg"
+      },
+      {
+        "nome": "Ferrari GTC4Lusso",
+        "imagem": "https://revistacarro.com.br/wp-content/uploads/2018/03/ferrari-gtc4lusso-t-3-txt1.jpg"
+      },
+      {
+        "nome": "Land Rover Range",
+        "imagem": "https://www.infomoney.com.br/wp-content/uploads/2019/06/land-rover-evoque-1.jpg?w=900&quality=70&strip=all"
+      }
+      
+      
+      
+      
+
+    ]
+  }
