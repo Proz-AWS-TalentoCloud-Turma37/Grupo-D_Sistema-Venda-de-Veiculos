@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Carro</title>
+    <link rel="stylesheet" href="./css/detalhes.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="AutoFácil Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquise o modelo">
+
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="back-button" onclick="window.history.back();">
+            <span>← Voltar</span>
+        </div> 
+        <div class="car-details" id="carros-car">
+            <img src="" alt="Carro" class="car-image" id="carro-imagem">
+            <div class="car-info">
+                <h2 id="carro-nome">Nome do Carro</h2>
+                <p class="year-km">XC60 T8 RECHARGE PLUS 2.0 4P</p>
+                <p class="year-kn">2022/2023 25.105 km</p>
+                <p class="price">R$ 312.990</p>
+                <p class="payment">Formas de Pagamento</p>
+                <button class="interest-button" onclick="window.location.href='form.html'">Tenho Interesse</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Função para obter o valor dos parâmetros na URL
+        function getParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Carrega os dados do carro a partir dos parâmetros da URL
+        document.addEventListener("DOMContentLoaded", () => {
+            const nomeCarro = getParam("nome");
+            const imagemCarro = getParam("imagem");
+
+            // Define os valores na página de detalhes
+            if (nomeCarro) {
+                document.getElementById("carro-nome").textContent = nomeCarro;
+            }
+            if (imagemCarro) {
+                document.getElementById("carro-imagem").src = imagemCarro;
+                document.getElementById("carro-imagem").alt = nomeCarro;
+            }
+        });
+    </script>
+</body>
+</html>
