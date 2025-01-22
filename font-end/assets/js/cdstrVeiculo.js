@@ -18,8 +18,8 @@ marcaInput.addEventListener("blur", function(e){
     let valor = e.target.value
     if(valor == ""){
         inputInvalido(marcaInput, marcaAviso);
-        inputsCorretos.marca = false
         marcaAviso.innerText = "O campo não pode ficar vazio";
+        inputsCorretos.marca = false
     }else{
         inputValido(marcaInput, marcaAviso);
         inputsCorretos.marca = true
@@ -30,12 +30,12 @@ let modeloInput = document.getElementById("modelo");
 let modeloLabel = document.querySelector("label[for='modelo']");
 let modeloAviso = document.getElementById("modelo-aviso");
 
-baleleaInput.addEventListener("blur", function(e){
+modeloInput.addEventListener("blur", function(e){
     let valor = e.target.value
     if(valor == ""){
         inputInvalido(modeloInput, modeloAviso);
-        inputsCorretos.modelo = false
         modeloAviso.innerText = "O campo não pode ficar vazio";
+        inputsCorretos.modelo = false
     }else{
         inputValido(modeloInput, modeloAviso);
         inputsCorretos.modelo = true
@@ -46,12 +46,12 @@ let anoInput = document.getElementById("ano");
 let anoLabel = document.querySelector("label[for='ano']");
 let anoAviso = document.getElementById("ano-aviso");
 
-baleleaInput.addEventListener("blur", function(e){
+anoInput.addEventListener("blur", function(e){
     let valor = e.target.value
     if(valor == ""){
         inputInvalido(anoInput, anoAviso);
-        inputsCorretos.ano = false
         anoAviso.innerText = "O campo não pode ficar vazio";
+        inputsCorretos.ano = false
     }else{
         inputValido(anoInput, anoAviso);
         inputsCorretos.ano = true
@@ -62,12 +62,12 @@ let placaInput = document.getElementById("placa");
 let placaLabel = document.querySelector("label[for='placa']");
 let placaAviso = document.getElementById("placa-aviso");
 
-baleleaInput.addEventListener("blur", function(e){
+placaInput.addEventListener("blur", function(e){
     let valor = e.target.value
     if(valor == ""){
         inputInvalido(placaInput, placaAviso);
-        inputsCorretos.placa = false
         placaAviso.innerText = "O campo não pode ficar vazio";
+        inputsCorretos.placa = false
     }else{
         inputValido(placaInput, placaAviso);
         inputsCorretos.placa = true
@@ -78,12 +78,12 @@ let corInput = document.getElementById("cor");
 let corLabel = document.querySelector("label[for='cor']");
 let corAviso = document.getElementById("cor-aviso");
 
-baleleaInput.addEventListener("blur", function(e){
+corInput.addEventListener("blur", function(e){
     let valor = e.target.value
     if(valor == ""){
         inputInvalido(corInput, corAviso);
-        inputsCorretos.cor = false
         corAviso.innerText = "O campo não pode ficar vazio";
+        inputsCorretos.cor = false
     }else{
         inputValido(corInput, corAviso);
         inputsCorretos.cor = true
@@ -98,8 +98,8 @@ precoInput.addEventListener("blur", function(e){
     let valor = e.target.value
     if(valor == ""){
         inputInvalido(precoInput, precoAviso);
-        inputsCorretos.preco = false
         precoAviso.innerText = "O campo não pode ficar vazio";
+        inputsCorretos.preco = false
     }else{
         inputValido(precoInput, precoAviso);
         inputsCorretos.preco = true
@@ -114,8 +114,8 @@ manutencaoInput.addEventListener("blur", function(e){
     let valor = e.target.value
     if(valor == ""){
         inputInvalido(manutencaoInput, manutencaoAviso);
-        inputsCorretos.manutencao = false
         manutencaoAviso.innerText = "O campo não pode ficar vazio";
+        inputsCorretos.manutencao = false
     }else{
         inputValido(manutencaoInput, manutencaoAviso);
         inputsCorretos.manutencao = true
@@ -130,8 +130,8 @@ multaInput.addEventListener("blur", function(e){
     let valor = e.target.value
     if(valor == ""){
         inputInvalido(multaInput, multaAviso);
-        inputsCorretos.multa = false
         multaAviso.innerText = "O campo não pode ficar vazio";
+        inputsCorretos.multa = false
     }else{
         inputValido(multaInput, multaAviso);
         inputsCorretos.multa = true
