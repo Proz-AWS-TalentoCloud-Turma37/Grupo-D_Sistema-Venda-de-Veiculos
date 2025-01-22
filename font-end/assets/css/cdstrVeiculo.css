@@ -1,0 +1,131 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* Header Styles */
+  header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    background-color: #e6f3f7;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #cdd8dc;
+  }
+  
+  .logo img {
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  
+  /* Form Styles */
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.line-break {
+    display: flex; /* Necessário para a margem funcionar corretamente */
+    margin-top: 8px; /* Ajuste esse valor para o espaçamento desejado */
+}
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form label {
+    text-align: left;
+    font-size: 14px;
+    color: #0f0e0e;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="marc"],
+  .contact-form input[type="tel"],
+  .contact-form input[type="password"],
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+    height: 80px;
+    border: 1px solid #56CCF2;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #de0f0f;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #1565c0;
+  }
+
+  .error {
+    border: 1px solid #de0f0f;
+    background-color: #f5d2d2;
+    color: #720202;
+  }
+
+  .correct {
+    border: 1px solid #56CCF2;
+    background-color: #e0f7fa;
+  }
+
+  .texto-aviso {
+    display: none;
+    font-size: .8rem;
+    color: #de0f0f;
+  }
+
+  .visible {
+    display: block;
+  }

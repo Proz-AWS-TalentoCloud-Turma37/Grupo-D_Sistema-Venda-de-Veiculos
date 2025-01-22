@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="assets/css/cdstrVeiculo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/Logo.png" alt="AutoFácil Logo">
+        </div>
+    </header>
+    <H1>Cadastrar Veículo</H1>
+    <div class="container">
+        <p class="description">Deixe os dados do veículo abaixo<br> <span class="line-break">entrarão em contato com você.</span></p>
+        
+        <form class="contact-form">
+            
+            <label for="tipo">Tipo</label>
+            <select id="tipo" class="correct" required>
+              <option>Carro</option>
+              <option>Moto</option>
+              <option>Caminhão</option>
+            </select>
+
+            <label for="marca">Marca</label>
+            <input type="text" id="marca" name="marca" class="correct" required>
+            <p id="marca-aviso" class="texto-aviso"></p>
+
+            <label for="modelo">Modelo</label>
+            <input type="text" id="modelo" name="modelo" class="correct" required>
+            <p id="modelo-aviso" class="texto-aviso"></p>
+
+            <label for="ano">Ano de Fabricação</label>
+            <input type="text" id="ano" name="ano" class="correct" required>
+            <p id="ano-aviso" class="texto-aviso"></p>
+
+            <label for="placa">Placa do Carro</label>
+            <input type="text" id="placa" name="placa" class="correct" required>
+            <p id="placa-aviso" class="texto-aviso"></p>
+
+            <label for="cor">Cor do Carro</label>
+            <input type="text" id="cor" name="cor" class="correct" required>
+            <p id="cor-aviso" class="texto-aviso"></p>
+
+            <label for="combustivel">Tipo de Combustível</label>
+            <select id="combustivel" class="correct" required>
+              <option>Gasolina</option>
+              <option>Álcool</option>
+              <option>Diesel</option>
+              <option>Gás Natural Veicular (GNV)</option>
+              <option>Elétrico</option>
+            </select>
+
+            <label for="preco">Preço</label>
+            <input type="text" id="preco" name="preco" class="correct" required>
+            <p id="preco-aviso" class="texto-aviso"></p>
+
+            <label for="manutencao">Manutenções</label>
+            <textarea id="manutencao" name="manutencao" class="correct"></textarea>
+            <p id="manutencao-aviso" class="texto-aviso"></p>
+
+            <label for="multa">Multas</label>
+            <textarea id="multa" name="multa" class="correct"></textarea>
+            <p id="multa-aviso" class="texto-aviso"></p>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">Aceito os termos e condições</label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
