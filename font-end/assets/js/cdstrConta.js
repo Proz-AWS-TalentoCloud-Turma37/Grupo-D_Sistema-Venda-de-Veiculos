@@ -12,7 +12,7 @@ function inputInvalido(input, aviso){
 
 let nomeInput = document.getElementById("name");
 let nomeLabel = document.querySelector("label[for='name']");
-let nomeAviso = document.getElementById("name-aviso")
+let nomeAviso = document.getElementById("name-aviso");
 
 nomeInput.addEventListener("blur", function(e){
     let valor = e.target.value

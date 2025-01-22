@@ -108,13 +108,13 @@
     background-color: #1565c0;
   }
 
-  input.error {
+  .error {
     border: 1px solid #de0f0f;
     background-color: #f5d2d2;
     color: #720202;
   }
 
-  input.correct {
+  .correct {
     border: 1px solid #56CCF2;
     background-color: #e0f7fa;
   }
