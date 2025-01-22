@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="assets/css/cdstrConta.css">
+    <script src="assets/js/cdstrConta.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/Logo.png" alt="AutoFácil Logo">
+        </div>
+    </header>
+    <H1>Cadastrar</H1>
+    <div class="container">
+        <form class="contact-form">
+            
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" class="correct" required>
+            <p id="name-aviso" class="texto-aviso"></p>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" class="correct" required>
+            <p id="email-aviso" class="texto-aviso"></p>
+
+            <label for="phone">Telefone com DDD</label>
+            <input type="tel" id="phone" name="phone" class="correct" required>
+            <p id="phone-aviso" class="texto-aviso"></p>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" class="correct" required>
+            <p id="senha-aviso" class="texto-aviso"></p>
+
+            <label for="confirm-password"> Confirmar Senha</label>
+            <input type="password" id="confirm-password" name="confirm-password" class="correct" required>
+            <p id="confirmar-senha-aviso" class="texto-aviso"></p>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">Aceito os termos e condições</label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
