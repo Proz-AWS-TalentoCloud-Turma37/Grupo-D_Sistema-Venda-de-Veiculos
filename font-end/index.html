@@ -30,7 +30,7 @@
 
     <script>
         function carregar() {
-            fetch('./json/carro.json')
+            fetch('assets/json/carro.json')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`Erro HTTP! status: ${response.status}`);
