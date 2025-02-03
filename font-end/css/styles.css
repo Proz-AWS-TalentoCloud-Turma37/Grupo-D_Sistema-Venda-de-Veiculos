@@ -37,23 +37,65 @@ header {
     color: #1a73e8;
 }
 
+header ul {
+    position: relative;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    float: left;
+}
+#menu {
+    margin-right: 1em;
+    font-size: 3em;
+    color: #7dc4da;
+}
+
+header ul li a {
+    color: #3b849b;
+    font-size: 1.1em;
+    padding: 2.0px 2.5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li ul {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    background: #e6f3f7;
+    display: none;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
 .botao{
    
     border: none;
     cursor: pointer;
-    
- } 
- 
- a {
     background-color: #1a73e8;
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+a {
    text-decoration: none;
-   color: white;
-   margin: 0 15px;
-   transition: background-color 0.3s;
-   border-radius: 10px;
-   padding: 10px;
-   font-size: 18px;
- }
+}
 
 .search-bar {
     display: flex;
