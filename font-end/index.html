@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoFácil - Pesquisa de Carros</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo"><img src="assets/Logo.png" alt="AutoFácil Logo"></div>
-        <div  class="botao">
-            <a href="cdstrVeiculo.html">Cadastrar veículo</a>
-            <a href="cdstrConta.html">Cadastrar-se</a>
-            <a href="login.html">Login</a>
-        </div>
     
         <div class="search-bar">
             <input type="text" placeholder="Pesquise o modelo">
@@ -21,7 +17,27 @@
             <input type="text" placeholder="Marca">
         </div>
     
+        <nav>
+            <ul>
+                
+                <li><a id="menu" href="#">≡</a>
+                        
+                    <ul>
+                        <li><a class="link" href="cdstrVeiculo.html">Cadastrar veículo</a></li>
+                        <li><a class="link" href="cdstrConta.html">Cadastrar-se</a></li>
+                        <li><a class="link" href="login.html">Login</a></li>
+                    </ul>
+                        
+                </li>
+                
+            </ul>
+        </nav>
     </header>
+
+    <div class="titulo">
+        <h1>Seja bem-vindo à AutoFacil! Veja nossa variedade</h1>
+        <h1>de modelos e escolha a que mais te agrada!</h1>
+    </div>
 
     <!-- Seção de lista de carros onde os cartões serão carregados dinamicamente -->
     <section class="car-list" id="carro-container">
