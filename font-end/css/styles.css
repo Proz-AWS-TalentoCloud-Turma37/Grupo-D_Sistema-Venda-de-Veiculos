@@ -12,13 +12,23 @@ body {
     background-color: #f9f9f9;
 }
 
-header {
+header{
     width: 100%;
     background-color: #e6f3f7;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #cdd8dc;
+}
+
+footer {
+    width: 100%;
+    background-color: #e6f3f7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     border-bottom: 2px solid #cdd8dc;
 }
 
@@ -85,6 +95,31 @@ header ul li ul li{
     position: relative;
     width: 100%;
     padding: 10px;
+}
+
+footer ul {
+    position: relative;
+}
+
+footer ul li {
+    position: relative;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+.texto-contato {
+    color: #305763;
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+footer ul li a {
+    color: #3b849b;
+    font-size: 1.1em;
+    padding: 2.0px 2.5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .botao{
